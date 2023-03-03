@@ -14,7 +14,7 @@ buttons.forEach(button => {
             modal.classList.remove("hide");
         } else if (button.innerText === "😩") {
             modalImg.src = "img/i-believe-in-you.gif";
-            message.innerText = "Keep going!";
+            message.innerText = "You got this!";
             modal.classList.remove("hide");
         } else {
             modalImg.src = "img/jonah-hill-excited.gif";

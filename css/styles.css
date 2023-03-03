@@ -10,10 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     /* margin: 0 auto; */
-    background-image: url('/img/artem-sapegin-b18TRXc8UPQ-unsplash.jpg');
+    /* background-image: url('/img/artem-sapegin-b18TRXc8UPQ-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    font-family: 'Golos Text', sans-serif;
+    font-weight:700;
+    background-color:#FCF0F5;
+    color:#373536;
 }
 
 main {
@@ -23,9 +27,15 @@ main {
 .container {
     display: flex;
     flex-direction:column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
-    min-height: 80vh;
+    /* min-height: 80vh; */
+}
+
+h1 {
+    background-color: hsla(0,0%,100%, 0.22);
+    margin: 20px!important;
+    font-size:1.8em!important;
 }
 
 .modal {
@@ -35,8 +45,34 @@ main {
     background-color: #DEC1CE;
 }
 
+.button-wrapper {
+    min-width:75%;
+    margin-top:20px;
+}
+
+.upside-down,
+.weary {
+    min-width: 14%;
+}
+
+.upside-down,
+.weary,
+.interview {
+    border:none;
+    background-color:#DF6A9E;
+    padding: 7px 5px;
+}
+
+.interview {
+    font-family: 'Golos Text', sans-serif;
+}
+
 .hide {
     display: none;
+}
+
+.modal {
+    margin:10px;
 }
 
 .modal-x {
@@ -53,4 +89,32 @@ main {
 img {
     width: 100%;
     height: auto;
+}
+
+.message {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .button-wrapper {
+        min-width:40%;
+        margin-top:20px;
+    }
+
+    .upside-down, 
+    .weary {
+        min-width: 12%;
+    }
+
+    .upside-down,
+    .weary,
+    .interview {
+    font-size:1.2em;
+    }
 }
